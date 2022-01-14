@@ -155,7 +155,9 @@ let foodArr = [
 
 //CODE HERE
 
-const filteredFood = foodArr.filter(word => word[0] === "High Calorie") 
+const filteredFood = foodArr.filter((tag) => {
+    return tag.tags.includes("High Calorie");
+}); 
  console.log(filteredFood)
 
 //////////////////PROBLEM 5////////////////////
