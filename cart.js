@@ -60,14 +60,14 @@ const summedPrice = cart.reduce((acc, cartObj) =>{
 
 function calcFinalPrice(cartTotal, couponValue, tax){
    let taxValue = cartTotal * tax;
-   return cartTotal - taxValue - couponValue;
+   return cartTotal + taxValue - couponValue;
 }
 
 let cartTotal = 200;
 let couponValue = 10;
 let tax = 0.07;
 
-console.log(calcFinalPrice(cartTotal, couponValue, tax));
+//console.log(calcFinalPrice(cartTotal, couponValue, tax));
 
 
 //////////////////PROBLEM 3////////////////////
@@ -91,7 +91,9 @@ console.log(calcFinalPrice(cartTotal, couponValue, tax));
 */
 
 /*
-    TEXT ANSWER HERE
+    The customer obeject will have a property called firstName and the value of a string with the customers first name.
+    It will also have a property called lastName and the value of a string with the customers last name.
+    It will also have a property called
 
 */
 
