@@ -91,9 +91,11 @@ let tax = 0.07;
 */
 
 /*
-    The customer obeject will have a property called firstName and the value of a string with the customers first name.
+    The customer object will have a property called firstName and the value of a string with the customers first name.
     It will also have a property called lastName and the value of a string with the customers last name.
-    It will also have a property called
+    It will also have a property called adress and the value of a string with the customers adress.
+    It will also have a property called houseNumber and the value of an integer with the customers house number.
+    It will also have a property called phoneNumber and the value of an integer with the customers phone number.
 
 */
 
@@ -102,4 +104,10 @@ let tax = 0.07;
     guidelines.
 */
 
-//CODE HERE
+const customer = {
+    firstName: 'Viktoria',
+    lastName: 'Smith',
+    adress: '1010 Sunset Dr',
+    houseNumber: '12',
+    phoneNumber: '2149764545'
+}
