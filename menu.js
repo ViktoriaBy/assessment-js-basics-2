@@ -155,9 +155,8 @@ let foodArr = [
 
 //CODE HERE
 
-// const filteredFood = foodArr.filter(/* CALLBACK HERE */)
-
-
+const filteredFood = foodArr.filter(word => word[0] === "High Calorie") 
+ console.log(filteredFood)
 
 //////////////////PROBLEM 5////////////////////
 /* 
