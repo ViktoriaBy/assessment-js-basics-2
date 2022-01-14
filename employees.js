@@ -95,9 +95,24 @@ empTwo.name = "Nick"
     the employees array. 
 */
 
-//CODE HERE
+class Manager extends Employee {
+    constructor(name, shifts, employees){
+        super(name, shifts);
+        
+        this.employees = employees;
+    }
+    getEmployees(){
+        console.log(`${this.name} manages ${this.employees}`);
+    }
+    addEmployee(emp){
+        this.employees.push(emp);
+    }
+}
 
-
+//let manager1 = new Manager("Lisa", "Monday", ["Tom", "Gary"]);
+//manager1.addEmployee("Ross");
+//console.log(manager1.employees);
+//manager1.getEmployees();
 
 /*
     Create a new instance of your class.
@@ -110,7 +125,7 @@ empTwo.name = "Nick"
     employees: Cece and Schmidt
 */
 
-//CODE HERE
+let manager = new Manager("Winston", "weekday mornings, weekday afternoons", ["Cece", "Schmidt"]);
 
 
 /*
@@ -118,7 +133,7 @@ empTwo.name = "Nick"
     `manager` object.  
 */
 
-//CODE HERE
+manager.getEmployees();
 
 /*
     Call the `addEmployee` method on the 
@@ -126,12 +141,11 @@ empTwo.name = "Nick"
     'Coach' or whatever name you'd like.
 */
 
-//CODE HERE 
-
+manager.addEmployee("Coach");
 /*
     Call the `getEmployees` method on the
     `manager` object again to confirm 
     that an employee was added.
 */
 
-//CODE HERE
+manager.getEmployees();
