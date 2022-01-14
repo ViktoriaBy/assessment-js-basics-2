@@ -51,9 +51,16 @@ const greetUser = (username) => console.log(`Welcome back, ${username}`)
 
 const deliveryAreaZipCodes = [85205, 85204, 85203, 85213, 85206]
 
-//CODE HERE
+function canWeDeliver(zipCode){
+    for(let i=0; i < deliveryAreaZipCodes.length; i++){
+        if(deliveryAreaZipCodes[i] === zipCode){
+            return "You're in our delivery zone!"
+        }
+    }
+    return "Sorry, we can't deliver to that address"
+}
 
-
+// console.log(canWeDeliver(85203));
 
 /* 
     Problem 2 Continued
@@ -73,7 +80,15 @@ const deliveryAreaZipCodes = [85205, 85204, 85203, 85213, 85206]
 */
 
 // CODE HERE
+function canWeDeliverTwo(zipCode){
+    if(deliveryAreaZipCodes.includes(zipCode)){
+        return "You're in our delivery zone!"
+    }else{
+        return "Sorry, we can't deliver to that address"
+    }
+}
 
+// console.log(canWeDeliverTwo(85205));
 
 //////////////////PROBLEM 3////////////////////
 /* 
@@ -108,9 +123,8 @@ const deals = [
     to replace the 15 with a 10.
 */
 
-//CODE HERE
-
-
+deals[0].title = deals[0].title.replace("15", "10");
+// console.log(deals);
 
 /*
     The restaurant is going to continue its
@@ -125,4 +139,5 @@ const deals = [
     to be displaying wrong on the live site.
 */
 
-//CODE HERE
+deals[1].desc = deals[1].desc.replace("March", "April").trim();
+// console.log(deals);
