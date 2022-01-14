@@ -22,10 +22,10 @@
 class Employee {
     constructor(name, shifts){
         this.name = name;
-        this.shift = shift;
+        this.shifts = shifts;
     }
     getSchedule(){
-        console.log(`${this.name} works on ${this.shift}`);
+        console.log(`${this.name} works on ${this.shifts}`);
     }
 }
 
@@ -42,14 +42,14 @@ class Employee {
     shifts: weekday mornings, weekday afternoons
 */
 
-//CODE HERE
+let empOne = new Employee("Jess", "weekday mornings, weekday afternoons");
 
 /*
     Call the `getSchedule` method on the
     `empOne` object.
 */
 
-//CODE HERE
+empOne.getSchedule();
 
 
 /*
@@ -64,7 +64,11 @@ class Employee {
     dot or bracket notation.
 */
 
-//CODE HERE
+empTwo = {...empOne};
+
+empTwo.name = "Nick"
+
+//console.log(empTwo);
 
 
 
