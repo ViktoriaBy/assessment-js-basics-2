@@ -36,7 +36,7 @@ const pizza = {
     category: "Entree",
     popularity: 9,
     rating: 10,
-    tags: ["Gluten Free", "Thin Crust"]
+    tags: ["Gluten Free", "Thin Crust", "High Calorie"]
 };
 
 
@@ -59,7 +59,7 @@ console.log(pizza.popularity);
     get the value.
 */
 
-//CODE HERE
+console.log(pizza.tags[1]);
 
 
 /*
@@ -69,7 +69,8 @@ console.log(pizza.popularity);
     Print the value of your new price variable.
 */
 
-//CODE HERE
+let { price } = pizza;
+console.log("Price: " + price);
 
 
 /*
@@ -79,7 +80,8 @@ console.log(pizza.popularity);
     Print the value of your category variable. 
 */
 
-//CODE HERE
+let { category } = pizza;
+console.log("Category: " + category);
 
 
 //////////////////PROBLEM 3////////////////////
