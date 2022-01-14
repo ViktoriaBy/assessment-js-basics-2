@@ -96,7 +96,48 @@ console.log("Category: " + category);
     data in some functions that you'll write.
 */
 
-//CODE HERE
+let foodArr = [
+    pie = {
+        name: "Apple Pie",
+        price: 2,
+        category: "Desert",
+        popularity: 4,
+        rating: 5,
+        tags: ["Vegan", "Sweet", "Low Calorie"]
+    },
+    cheesburger = {
+        name: "Cheesburger",
+        price: 10,
+        category: "Entree",
+        popularity: 7,
+        rating: 9,
+        tags: ["Gluten Free", "Non Vegan", "High Calorie"]
+    },
+    caesarSalad = {
+        name: "Caesar Salad",
+        price: 4,
+        category: "Side",
+        popularity: 6,
+        rating: 11,
+        tags: ["Caesar Dressing", "Chicken", "Salads"]
+    },
+    steak = {
+        name: "Steak Ribeye",
+        price: 15,
+        category: "Entree",
+        popularity: 10,
+        rating: 10,
+        tags: ["Rare", "Medium Rare", "Well Done", "Meat"]
+    },
+    meatBalls = {
+        name: "Meat Balls",
+        price: 4,
+        category: "Entree",
+        popularity: 3,
+        rating: 10,
+        tags: ["Vegie meat", "Tomato sause", "High Calorie"]
+    },
+]
 
 
 
