@@ -199,8 +199,21 @@ const filteredFood = foodArr.filter((tag) => {
     Return the filtered array from the entire function
 */
 
-//CODE HERE
+function filterByProperty(property, number, type){
+    const filteredFood = foodArr.filter((tag) => {
+        if(tag.type === "above"){
+            if(tag.price > number){
+                return tag;
+            }
+        }
+    }); 
+}
 
+let property = 5;
+let number = 3;
+let type = "above";
+
+console.log(filterByProperty(property, number, type));
 
 /*
     Invoke the `filterByProperty` function passing
